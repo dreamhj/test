@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>웅진씽크빅</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="resource/js/lib/ui/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="resource/js/lib/swiper/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="resource/js/lib/bxslider/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="resource/js/lib/monthpicker/MonthPicker.min.css">
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+<script type="text/javascript" src="resource/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="resource/js/lib/ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="resource/js/script.js"></script>
+<link rel="shortcut icon" href="">
+</head>
+
+<body class="main">
+<div id="skipnavi">
+	<a href="#container">본문 바로가기</a>
+</div>
+
+<div id="wrap">
+	<header class="site_header">
+		<div class="toolbar" id="toolbar">
+			<div class="grid">
+				<div class="fav">
+					<strong>즐겨찾기</strong>
+					<a href="">즐겨찾기1</a>
+					<a href="">즐겨찾기2</a>
+					<a href="">즐겨찾기3</a>
+					<a href="">즐겨찾기4</a>
+				</div>
+				<div class="acess">
+					<strong>최근접속</strong>
+					<a href="">최근접속1</a>
+					<a href="">최근접속2</a>
+					<a href="">최근접속3</a>
+					<a href="">최근접속4</a>
+				</div>
+				<a href="" class="btn_toggle">토글버튼</a>
+			 </div>
+		</div>
+		<div class="grid">
+			<h1 class="logo"><a href="index.html" title="LOVE Think big"><img src="resource/image/logo.png" alt="LOVE Think big"></a></h1>
+			<dl class="noti_count">
+				<dt>알림업무</dt>
+				<dd><a href="">15</a></dd>
+				<dt>중요공지</dt>
+				<dd><a href="">15</a></dd>
+				<dt>본부스케줄</dt>
+				<dd><a href="">15</a></dd> 
+			</dl>
+			<div class="log">
+				<span class="welcome"><span>신광섭</span>님 안녕하세요</span>
+				<a href="" class="btn_log" title="로그인"><span>로그인버튼</span></a>
+			</div>
+			<button type="button" class="btn_menu" id="allNavBtn"><span class="icon"></span>전체메뉴</button>
+			<div class="allmenu" id="allNav">
+				<h2 class="hide">전체메뉴보기</h2>
+				<nav class="navi">
+					<ul>
+						<li><a href="">마이데스크</a>
+							<div class="navi_sub">
+								<strong class="menu_t">마이데스크</strong>
+								<ul>
+									<li><a href="">업무알림</a>
+										<ul>
+											<li><a href="">업무알리미</a></li>
+										</ul>
+									</li>
+									<li><a href="">교사정보</a>
+										<ul>
+											<li><a href="">교사정보조회</a></li>
+											<li><a href="">교사정보수정</a></li>
+											<li><a href="">업무해약요청</a></li>
+										</ul>
+									</li>
+									<li><a href="">이력관리</a></li>
+									<li><a href="">디지털디바이스동의내역</a>
+										<ul>
+											<li><a href="">구매동의서</a></li>
+										</ul>									
+									</li>
+									<li><a href="">아이튜터</a>
+										<ul>
+											<li><a href="">모바일정보해지</a></li>
+										</ul>									
+									</li>
+									<li><a href="">제증명서</a>
+										<ul>
+											<li><a href="">원천징수영수증</a></li>
+											<li><a href="">사실확인서</a></li>
+										</ul>									
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">회원관리</a>
+							<div class="navi_sub">
+								<strong class="menu_t">회원관리</strong>
+								<ul>
+									<li><a href="">회원현황</a>
+										<ul>
+											<li><a href="">회원검색</a></li>
+											<li><a href="">회원리스트</a></li>
+											<li><a href="">학습진도조회</a></li>
+											<li><a href="">학습진도표</a></li>
+											<li><a href="">또또사랑스케줄관리</a></li>
+											<li><a href="">수업요일시간변경</a></li>
+											<li><a href="">입출결현황</a></li>
+										</ul>
+									</li>
+									<li><a href="">회원변동</a>
+										<ul>
+											<li><a href="">회원변동이력</a></li>
+											<li><a href="">회원변동현황</a></li>
+											<li><a href="">과목변경</a></li>
+											<li><a href="">전입전출</a></li>
+											<li><a href="">전입전출현황</a></li>
+											<li><a href="">인계인수</a></li>
+											<li><a href="">인계인수현황</a></li>
+											<li><a href="">위수임</a></li>
+											<li><a href="">위수임현황</a></li>
+											<li><a href="">장기선납계약종료예정</a></li>
+											<li><a href="">북클럽계약종료예정</a></li>
+											<li><a href="">화상영어수업회원관리</a></li>
+										</ul>
+									</li>
+									<li><a href="">회비관리</a>
+										<ul>
+											<li><a href="">회원별회비현황</a></li>
+											<li><a href="">현금입금배분/대체</a></li>
+											<li><a href="">배분현황</a></li>
+											<li><a href="">자동이체즉시출금</a></li>
+											<li><a href="">자동이체신청현황</a></li>
+											<li><a href="">가상계좌환불관리</a></li>
+											<li><a href="">가상계좌리포트</a></li>
+											<li><a href="">북클럽위약금현황</a></li>
+											<li><a href="">북클럽위약금배분(현금)</a></li>
+											<li><a href="">북클럽위약금배분(카드)</a></li>
+											<li><a href="">북클럽회비계산</a></li>
+											<li><a href="">공부방회비환불현황</a></li>
+											<li><a href="">교사별 입금현황</a></li>
+											<li><a href="">미납회비공제동의등록</a></li>
+											<li><a href="">지자체 회비현황</a></li>
+											<li><a href="">지자체별입금배분(카드)</a></li>
+											<li><a href="">지자체별입금배분(현금)</a></li>
+										</ul>
+									</li>
+									<li><a href="">입회/휴회</a>
+										<ul>
+											<li><a href="">전자계약서</a></li>
+											<li><a href="">입회등록</a></li>
+											<li><a href="">과목입회</a></li>
+											<li><a href="">장기연장</a></li>
+											<li><a href="">휴회요청회원</a></li>
+											<li><a href="">휴회승인</a></li>
+											<li><a href="">관심고객현황</a></li>
+											<li><a href="">입회취소</a></li>
+											<li><a href="">장기선납 입회승인</a></li>
+										</ul>
+									</li>
+									<li><a href="">교재관리</a>
+										<ul>
+											<li><a href="">교재주문</a></li>
+											<li><a href="">교재반납</a></li>
+											<li><a href="">교재반납확정</a></li>
+											<li><a href="">교재수불현황</a></li>
+											<li><a href="">긴급출고현황</a></li>
+											<li><a href="">긴급출고승인</a></li>
+											<li><a href="">긴급출고반납승인</a></li>
+											<li><a href="">홍보/판촉/비정기신청</a></li>
+											<li><a href="">공부방교재낱권관리</a></li>
+											<li><a href="">공부방시험문제집관리</a></li>
+											<li><a href="">교재배송</a></li>
+											<li><a href="">교재회수</a></li>
+											<li><a href="">북패드반납</a></li>
+											<li><a href="">W패드관리</a></li>
+										</ul>
+									</li>
+									<li><a href="">주문/판매</a>
+										<ul>
+											<li><a href="">전자펜/중등교재판매</a></li>
+											<li><a href="">교사상담용패드판매</a></li>
+											<li><a href="">전자펜구매</a></li>
+										</ul>
+									</li>
+									<li><a href="">정간물/진열상품</a>
+										<ul>
+											<li><a href="">소비자의뢰관리</a></li>
+											<li><a href="">정간물배달지시내역서</a></li>
+											<li><a href="">정간물정보변경</a></li>
+											<li><a href="">정간물월납계약입금관리</a></li>
+											<li><a href="">정기간행물만료고객</a></li>
+											<li><a href="">정기간행물회원관리</a></li>
+											<li><a href="">진열상품등록</a></li>
+											<li><a href="">진열상품승인/거절</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">성과관리</a>
+							<div class="navi_sub">
+								<strong class="menu_t">성과관리</strong>
+								<ul>
+									<li><a href="">실적관리</a>
+										<ul>
+											<li><a href="">월별실적현황</a></li>
+											<li><a href="">과목별실적현황</a></li>
+											<li><a href="">회원1인당과목현황</a></li>
+											<li><a href="">실적조회</a></li>
+										</ul>
+									</li>
+									<li><a href="">수수료관리</a>
+										<ul>
+											<li><a href="">수수료율미리보기</a></li>
+											<li><a href="">수수료실적현황</a></li>
+											<li><a href="">정간물수수료되물림현황</a></li>
+											<li><a href="">수수료명세표</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">운영관리</a>
+							<div class="navi_sub">
+								<strong class="menu_t">운영관리</strong>
+								<ul>
+									<li><a href="">조직관리</a>
+										<ul>
+											<li><a href="">목표관리</a></li>
+											<li><a href="">신입교사동행</a></li>
+											<li><a href="">소통교사선정</a></li>
+											<li><a href="">소통교사확정/면담</a></li>
+											<li><a href="">터치현황표</a></li>
+											<li><a href="">교사정보현황</a></li>
+										</ul>
+									</li>
+									<li><a href="">지국운영관리</a>
+										<ul>
+											<li><a href="">교사계약관리</a></li>
+											<li><a href="">가망교사Pool 조회</a></li>
+											<li><a href="">업무해약요청관리</a></li>
+											<li><a href="">원천세등록</a></li>
+										</ul>
+									</li>
+									<li><a href="">센터운영관리</a>
+										<ul>
+											<li><a href="">센터 씽크U 과목별현황</a></li>
+											<li><a href="">센터 입출결현황</a></li>
+											<li><a href="">센터운영관리</a></li>
+										</ul>
+									</li>
+									<li><a href="">씽크맘교실</a>
+										<ul>
+											<li><a href="">씽크맘교실(방문)</a></li>
+											<li><a href="">씽크맘교실(공부방) </a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">아카데미</a>
+							<div class="navi_sub">
+								<strong class="menu_t">아카데미</strong>
+								<ul>
+									<li><a href="AC_A.html">이달의 교육자료</a></li>
+									<li><a href="AC_B_01.html">교사교육</a>
+										<ul>
+											<li><a href="AC_B_01.html">멘토링 과정</a></li>
+											<li><a href="AC_B_02.html">참교사 Basic과정</a></li>
+											<li><a href="AC_B_03.html">영어전문교사 온라인과정</a></li>
+											<li><a href="AC_B_04.html">영어정착과정</a></li>
+											<li><a href="AC_B_05.html">학습센터 전환과정</a></li>
+											<li><a href="AC_B_06.html">공부방 전환과정</a></li>
+										</ul>
+									</li>
+									<li><a href="AC_C_01.html">지국화상교육</a>
+										<ul>
+											<li><a href="AC_C_01.html">사전학습(미리보기)</a></li>
+											<li><a href="AC_C_02.html">다시보기</a></li>
+										</ul>
+									</li>
+									<li><a href="AC_D_01.html">관리자교육</a>
+										<ul>
+											<li><a href="AC_D_01.html">또또리덧쿨</a></li>
+											<li><a href="AC_D_02.html">또또리더스쿨 다시보기</a></li>
+											<li><a href="AC_D_03.html">신임팀장 Preview 과정</a></li>
+											<li><a href="AC_D_04.html">신임센터관리자 기본과정</a></li>
+											<li><a href="AC_D_05.html">신임지국장 Preview 과정</a></li>
+										</ul>
+									</li>
+									<li><a href="AC_E_01.html">교육이수현황</a>
+										<ul>
+											<li><a href="AC_E_01.html">교육출석확인</a></li>
+											<li><a href="AC_E_02.html">멘토링 과정 학습현황</a></li>
+											<li><a href="AC_E_03.html">참교사 Basic 과정 학습현황</a></li>
+											<li><a href="AC_E_04.html">영어전문교사 학습현황</a></li>
+											<li><a href="AC_E_05.html">영어정착과정 학습현황</a></li>
+											<li><a href="AC_E_06.html">학습센터전환과정 학습현황</a></li>
+											<li><a href="AC_E_07.html">공부방전환과정 학습현황</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">자료실</a>
+							<div class="navi_sub">
+								<strong class="menu_t">자료실</strong>
+								<ul>
+									<li><a href="">북클럽교실</a>
+										<ul>
+											<li><a href="">북클럽S_한글</a></li>
+											<li><a href="">북클럽S_수깨</a></li>
+											<li><a href="">북클럽S_수학</a></li>
+											<li><a href="">북클럽S_사회과학</a></li>
+											<li><a href="">북클럽S_국어</a></li>
+											<li><a href="">북클럽S_한자</a></li>
+											<li><a href="">북클럽플러스</a></li>
+										</ul>
+									</li>
+									<li><a href="">씽크빅교실</a>
+										<ul>
+											<li><a href="">(신)호기심깨치기</a></li>
+											<li><a href="">(신)한글깨치기</a></li>
+											<li><a href="">(신)한자깨치기</a></li>
+											<li><a href="">창의수학깨치기</a></li>
+											<li><a href="">깨치기 아기유치원 플러스</a></li>
+											<li><a href="">쿠키쿠플러스</a></li>
+											<li><a href="">수학</a></li>
+											<li><a href="">국어</a></li>
+											<li><a href="">사회과학</a></li>
+											<li><a href="">한자</a></li>
+											<li><a href="">바로셈</a></li>
+											<li><a href="">바로독해</a></li>
+											<li><a href="">씽크U영어</a></li>
+											<li><a href="">씽크U보카</a></li>
+											<li><a href="">씽크U그래머</a></li>
+											<li><a href="">씽크U수학</a></li>
+											<li><a href="">씽크U국어</a></li>
+											<li><a href="">씽크U사회과학</a></li>
+											<li><a href="">씽크U한자</a></li>
+										</ul>
+									</li>
+									<li><a href="">스터디센터교실</a>
+										<ul>
+											<li><a href="">씽크U수학_주2</a></li>
+											<li><a href="">씽크U수학_주3</a></li>
+											<li><a href="">씽크U영어_주2</a></li>
+											<li><a href="">씽크U영어_주3</a></li>
+											<li><a href="">씽크U리딩(센터)</a></li>
+											<li><a href="">V2수학</a></li>
+											<li><a href="">홈스쿨 한국사</a></li>
+											<li><a href="">통합논술</a></li>
+											<li><a href="">교과토론논술</a></li>
+											<li><a href="">교과서로통하는논술</a></li>
+											<li><a href="">북클럽 한자</a></li>
+											<li><a href="">홈스쿨 예비초등</a></li>
+											<li><a href="">바로셈</a></li>
+											<li><a href="">신나는 지리탐험</a></li>
+											<li><a href="">신나는 우리문화</a></li>
+											<li><a href="">신나는 우리역사</a></li>
+											<li><a href="">신나는 세계역사</a></li>
+										</ul>
+									</li>
+									<li><a href="">운영자료실</a>
+										<ul>
+											<li><a href="">스터디센터자료실</a></li>
+											<li><a href="">씽크맘자료실</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="">커뮤니티</a>
+							<div class="navi_sub">
+								<strong class="menu_t">커뮤니티</strong>
+								<ul>
+									<li><a href="">공지사항</a>
+										<ul>
+											<li><a href="">본사공지</a></li>
+											<li><a href="">집안통신</a></li>
+											<li><a href="">아이튜터안내</a></li>
+										</ul>
+									</li>
+									<li><a href="">본부스케줄</a></li>
+									<li><a href="">도란도란</a></li>
+									<li><a href="">성장순위</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<a href="" class="close">닫기</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<div id="container">
+		<div class="grid">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="main_cont swipe1">
+							<div class="col">
+								<div class="item noti">
+									<h2><span>Today</span> 업무알림</h3>
+									<ul>
+										<li><a href="">북클럽종료예정<span class="count">10</span></a></li>
+										<li><a href="">북클럽종료예정<span class="count">32</span></a></li>
+										<li><a href="">북클럽종료예정<span class="count">59</span></a></li>
+										<li><a href="">북클럽종료예정<span class="count">48</span></a></li>
+										<li><a href="">북클럽종료예정<span class="count">76</span></a></li>
+									</ul>
+								</div>
+								<div class="item visual">
+									<ul class="bxslider">
+									  <li>img01</li>
+									  <li>img02</li>
+									  <li>img03</li>
+									</ul>
+								</div>
+								<div class="item report">
+									<h2>실적현황 <span>성장수 8,345</span></h2>
+									<ul>
+										<li><strong>북스</strong>
+											<ul>
+												<li>당월입회 <span>28,156</span></li>
+												<li>당월휴회 <span>28,156</span></li>
+												<li>당월성장수 <span>28,156</span></li>
+											</ul>
+										</li>
+										<li><strong>일반</strong>
+											<ul>
+												<li>당월입회 <span>28,156</span></li>
+												<li>당월휴회 <span>28,156</span></li>
+												<li>당월성장수 <span>28,156</span></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col">
+								<div class="item list my">
+									<h2>마이데스크</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="html/sub.html" class="bt_more">더보기</a>
+								</div>
+								<div class="item list result">
+									<h2>성과관리</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+								<div class="item list manage">
+									<h2>운영관리</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="item list member">
+									<h2>회원관리</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="main_cont swipe2">
+							<div class="col">
+								<div class="item noti">
+									<h2><span>Notice</span> 공지사항</h3>
+									<ul>
+										<li><a href=""><span class="tag on">본사</span><span class="date">04.10</span>북클럽종료예정북클럽종료예정북클럽종료예정북클럽종료예정북클럽종료예정북클럽종료예정</a></li>
+										<li><a href=""><span class="tag">본사</span><span class="date">04.10</span>북클럽종료예정</a></li>
+										<li><a href=""><span class="tag">본사</span><span class="date">04.10</span>북클럽종료예정</a></li>
+										<li><a href=""><span class="tag on">본사</span><span class="date">04.10</span>북클럽종료예정</a></li>
+										<li><a href=""><span class="tag">본사</span><span class="date">04.10</span>북클럽종료예정</a></li>
+									</ul>
+									<a href="" class="bt_more">공지사항 더보기</a>
+								</div>
+								<div class="item list data1">
+									<h2>과목별자료실</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+								<div class="item list data2">
+									<h2>운영자료실</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="item visual">
+									<ul class="bxslider">
+									  <li>img01</li>
+									  <li>img02</li>
+									</ul>
+								</div>
+								<div class="item schedule">
+									<h2>본부스케줄 <span class="date"><a href="" class="dir">&lt;</a>04.18<a href="" class="dir">&gt;</a></span></h2>
+									<ul>
+										<li><a href="">디지털 디바이스 사용동의서 등록마감</a></li>
+										<li><a href="">디지털 디바이스 사용동의서 등록마감</a></li>
+										<li><a href="">디지털 디바이스 사용동의서 등록마감</a></li>
+									</ul>
+									<a href="" class="bt_more">스케줄더보기</a>
+								</div>
+							</div>
+							<div class="col">
+								<div class="item list talk1">
+									<h2><a href="html/sub.html">도란도란</a></h2>
+									<p>식구들과 함께 나누는 정다운 이야기</p>
+								</div>
+								<div class="item list talk2">
+									<h2><a href="html/sub.html">성장순위</a></h2>
+									<p>오늘도 쑥! 쑥! 축하드려요!</p>
+								</div>
+								<div class="item list academy">
+									<h2>북클럽아카데미</h2>
+									<ul>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+										<li><a href="">등록정보</a></li>
+									</ul>
+									<a href="" class="bt_more">더보기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!--// Swiper -->
+		</div>
+	</div>
+
+	<footer class="site_footer">
+		<div class="grid">
+			<div href="" class="brand" title="woongin"><img src="resource/image/footer_logo.png" alt="woongin"></div>
+			<p class="copyright">copyright 2016 &copy;  woongin corporation all rights reserved.</p>
+			<div class="user_service">
+				<a href="" class="btn outline customer"><span>예비고객관리</span></a>
+				<a href="" class="btn outline street"><span>도로명주소<br>안내시스템</span></a>
+			</div>
+			<button type="button" class="btn_toggle">하단토글버튼</button>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>
+
